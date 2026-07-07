@@ -81,4 +81,28 @@ La solución contempla que el usuario inicie sesión y resuelva el CAPTCHA una �
 
 ---
 
-## 📂 Estructura Recomendada del Repositorio
+## 📂 Estructura del Repositorio
+
+La organización del proyecto se plantea de la siguiente manera para mantener claridad y modularidad en cada componente:
+
+```plaintext
+proyecto-automatizacion-saldos/
+│
+├── README.md                # Documentación principal del proyecto
+├── requirements.txt         # Dependencias necesarias (Python y librerías)
+│
+├── src/                     # Código fuente principal
+│   ├── main.py              # Punto de entrada del sistema
+│   ├── downloader.py        # Módulo para descargas desde Luz del Sur
+│   ├── excel_processor.py   # Procesamiento y transformación de archivos Excel
+│   ├── onedrive.py          # Integración con Microsoft OneDrive
+│   ├── outlook.py           # Envío automático de correos vía Outlook
+│   ├── config.py            # Configuración general del proyecto
+│   └── utils.py             # Funciones auxiliares y utilitarias
+│
+├── data/                    # Datos de entrada y salida
+│   ├── placas.xlsx          # Archivo con lista de placas
+│   ├── descargas/           # Carpeta para archivos descargados
+│   └── pruebas/             # Carpeta para pruebas y validaciones
+│
+└── docs/                    # Documentación adicional del proyecto
